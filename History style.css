@@ -1,0 +1,47 @@
+<style>
+html{scroll-behavior: smooth;| transition: ease 5s;}
+.ontop{position:fixed; background:#000 bottom:40px; right: 40px; padding: 10px; border-radius: 5px; width: 20px}
+.ontop:hover{background: #0011ff;}
+
+
+
+
+
+.btn-up {
+  position: fixed;
+  background-color: #f57c00;
+  left: 20px;
+  bottom: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.15s ease-in-out, transform 0.3s ease-in-out;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-up_hide {
+  display: none;
+}
+
+.btn-up_hiding {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.btn-up-icon {
+  width: 40px;
+  height: 40px;
+  fill: currentcolor;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-up:hover {
+    background-color: #ef6c00;
+  }
+} 

@@ -1,0 +1,178 @@
+<style>
+.iksweb{display: inline-block;cursor: pointer; font-size:60px;text-decoration:none;padding:60px 20px; color:#000000;background:#0095ff;border-radius:60px;border:60px solid #ffffff;}
+.iksweb:hover{background:#0095ff;color:#ffffff;border:60px solid #000000;transition: all 1s ease;}
+</style>
+ 
+.center-pic{
+    display:block;
+    margin:auto;
+    }
+    <style>
+html{scroll-behavior: smooth;| transition: ease 5s;}
+.ontop{position:fixed; background:#000 bottom:40px; right: 40px; padding: 10px; border-radius: 5px; width: 20px}
+.ontop:hover{background: #0011ff;}
+
+/Тест закрелпение шапки/
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    }
+
+
+      .wrapper {
+        width: 100%;
+        max-width: 1920px;
+        }
+
+    @media screen and (max-width: 768) { 
+      main {
+        padding: 10px;
+      }  
+      article {
+        flex-basis: calc(50%-20px);
+      }
+    }
+ 
+    @media screen and (max-width: 768){
+        article {
+            flex-basis: 100%;
+          } 
+    }
+    @media only screen and (min-width: 1200px) {
+      /* CSS стили для больших экранов */
+    }
+    
+    А для смартфонов и планшетов с шириной экрана менее 768px:
+    
+    @media only screen and (max-width: 767px) {
+      /* CSS стили для мобильных устройств */
+    }
+    
+    Можно также добавить еще один диапазон для планшетов с шириной экрана от 768px до 1199px:
+    
+    @media only screen and (min-width: 768px) and (max-width: 1199px) {
+      /* CSS стили для планшетов */
+    }
+
+    /* стили, общие для всех экранов */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* стили для больших экранов */
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav {
+    float: right;
+  }
+  
+  .article {
+    float: left;
+    width: 70%;
+  }
+  
+  .sidebar {
+    float: right;
+    width: 30%;
+  }
+  
+  .footer {
+    text-align: center;
+  }
+}
+
+/* стили для планшетов */
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .header {
+    display: block;
+  }
+  
+  .nav {
+    display: none;
+  }
+  
+  .article {
+    width: 100%;
+  }
+  
+  .sidebar {
+    display: none;
+  }
+  
+  .footer {
+    text-align: center;
+  }
+}
+
+/* стили для мобильных устройств */
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .header {
+    display: block;
+  }
+  
+  .nav {
+    display: none;
+  }
+  
+  .article {
+    width: 100%;
+  }
+  
+  .sidebar {
+    display: none;
+  }
+  
+  .footer {
+    text-align: center;
+  }
+}
+/* Для маленьких экранов */
+@media (max-width: 767px) {
+  body {
+    background-image: url('small-bg.jpg');
+  }
+}
+
+/* Для средних экранов */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-image: url('medium-bg.jpg');
+  }
+}
+
+/* Для больших экранов */
+@media (min-width: 992px) {
+  body {
+    background-image: url('large-bg.jpg');
+  }
+}
+
+.rounded-image {
+  border-radius: 50%;
+}
